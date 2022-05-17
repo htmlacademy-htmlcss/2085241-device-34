@@ -1,7 +1,7 @@
 # Личный проект «Девайс»
 
 * Студент: [Volya Sinaiskaya](https://up.htmlacademy.ru/htmlcss/34/user/2085241).
-* Наставник: `Неизвестно`.
+* Наставник: [Сергей Остаповец](https://up.htmlacademy.ru/htmlcss/34/user/288419).
 
 ---
 
