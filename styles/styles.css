@@ -8,37 +8,31 @@
 
 @font-face {
 	font-family: "Rubik";
-font-style: normal;
-font-weight: 400;
-src: url("../fonts/rubik/rubik-400.woff2") format("woff2");
-font-display: swap;
+	font-style: normal;
+	font-weight: 400;
+	src: url("../fonts/rubik/rubik-400.woff2") format("woff2");
+	font-display: swap;
 }
 
 @font-face {
 	font-family: "Rubik";
-font-style: normal;
-font-weight: 700;
-src: url("../fonts/rubik/rubik-700.woff2") format("woff2");
-font-display: swap;
+	font-style: normal;
+	font-weight: 700;
+	src: url("../fonts/rubik/rubik-700.woff2") format("woff2");
+	font-display: swap;
 }
 
 body {
-	font-family: "Rubik"; sans-serif;
-  font-weight: 400;
+	font-family: Rubik, Arial, sans-serif;
+	font-style: normal;
+	font-weight: 400;
 	font-size: 18px;
 	line-height: 30px;
-	font-style: normal;
 	color: #000000;
-	background-color: #FFFFFF;
-}
-
-a {
-	color: #000000;
-	text-decoration: none;
-}
+  	background-color: #ffffff;
+  }
 
 .page-header {
-	color: #000000;
 	background-color: #FFE17F;
 }
 
@@ -56,17 +50,22 @@ a {
 .user-panel-link {
 	font-size: 18px;
 	line-height: 30px;
+	color: #000000;
+	text-decoration: none;
 }
 
 .navigation-link {
 	font-family: "Raleway";
+	font-style: normal;
+	font-weight: 800;
     font-size: 18px;
 	line-height: 21px;
 	color: #000000;
+	text-decoration: none;
 }
 
 .navigation-list {
-	font-family: 'Raleway';
+	font-family: "Raleway";
 	font-style: normal;
 	font-weight: 800;
 	font-size: 18px;
@@ -90,13 +89,18 @@ a {
 	overflow: hidden;
 }
 
+.promo-slider-list, .promo-slider-controls-list {
+	list-style: none;
+
+}
+
 .promo-slider-title {
 	font-family: 'Raleway';
 	font-style: normal;
 	font-weight: 800;
 	font-size: 50px;
 	line-height: 50px;
-	color: #000000;
+	
 }
 
 .promo-slider-text {
@@ -111,6 +115,8 @@ a {
 	line-height: 21px;
 	text-align: center;
 	background-color: #FFE17F;
+	color: #000000;
+	text-decoration: none;
 }
 
 .description-name {
@@ -126,7 +132,13 @@ a {
 }
 
 .category-image-list {
+	font-family: 'Raleway';
+	font-style: normal;
+	font-weight: 800;
+	font-size: 18px;
+	line-height: 24px;
 	list-style: none;
+	color: #000000;
 	padding: 0;
 	margin: 0;
 }
@@ -135,13 +147,16 @@ a {
 	background-color: #FFE17F;
 }
 
-.category-image-item {
+.category-link {
 	font-family: 'Raleway';
 	font-style: normal;
 	font-weight: 800;
 	font-size: 18px;
 	line-height: 24px;
+	list-style: none;
 	color: #000000;
+	text-decoration: none;
+
 }
 
 .benefits-container {
@@ -162,21 +177,22 @@ a {
 	letter-spacing: 0.2em;
 	text-transform: uppercase;
 	color: #000000;
-	;
-background-color: #FFE17F;
+	background-color: #FFE17F;
 }
-/* .benefits-buttons-item-choice {
-font-family: 'Raleway';
-font-style: normal;
-font-weight: 800;
-font-size: 18px;
-line-height: 21px;
-text-align: center;
-letter-spacing: 0.2em;
-text-transform: uppercase;
-color: #FFE17F;;
-background-color: #000000;
-} */
+
+.benefits-buttons-item-choice {
+	font-family: 'Raleway';
+	font-style: normal;
+	font-weight: 800;
+	font-size: 18px;
+	line-height: 21px;
+	text-align: center;
+	letter-spacing: 0.2em;
+	text-transform: uppercase;
+	color: #FFE17F;;
+	background-color: #000000;
+} 
+
 .benefits-description-list {
 	list-style: none;
 }
@@ -219,10 +235,17 @@ background-color: #000000;
 	color: #444444;
 }
 
-.info-brands {
+.info-brands-list {
 	color: red;
-	 }  /* не поняла как поменять цвет текста в списке. Оформляла его в свап с классом, но не получилось( */
-
+}  
+.red-dot  {
+	font-family: 'Rubik';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 18px;
+	line-height: 20px;
+	color: #000000;
+}
 .contacts-info-link {
 	font-family: 'Raleway';
 	font-style: normal;
@@ -230,6 +253,8 @@ background-color: #000000;
 	font-size: 18px;
 	line-height: 21px;
 	background-color: #FFE17F;
+	color: #000000;
+	text-decoration: none;
 }
 
 .footer-device-title {
@@ -294,6 +319,7 @@ background-color: #000000;
 	font-size: 18px;
 	line-height: 21px;
 	color: #FFFFFF;
+	text-decoration: none;
 }
 
 .footer-social-list {
@@ -301,8 +327,9 @@ background-color: #000000;
 }
 
 .social-button {
-	background: #ffffff;
+	background: #FFFFFF; /* здесь надо круги отрисовать вокруг иконок в css */
 }
+
 /* Catalog */
 .inner-header-title {
 	font-family: 'Raleway';
@@ -322,6 +349,7 @@ background-color: #000000;
 	font-size: 16px;
 	line-height: 19px;
 	color: #000000;
+	text-decoration: none;
 }
 
 .catalog-products {
@@ -359,20 +387,21 @@ background-color: #000000;
 	font-size: 18px;
 	line-height: 21px;
 	color: #000000;
-/* background: #FFE17F;  в кнопке фон не поменялся, может это ссылкой надо оформить? */;
+	background: #FFE17F; 
+    border: none;
 }
 
 .sorting {
 	background-color: #F0F0F0;
 }
 
-.product-card-name {
+.product-card-link {
 	font-family: 'Rubik';
 	font-style: normal;
 	font-weight: 700;
 	font-size: 18px;
-	line-height: 20px;
 	color: #000000;
+	text-decoration: none;
 }
 
 .product-card-price {
@@ -391,6 +420,7 @@ background-color: #000000;
 	font-size: 16px;
 	line-height: 19px;
 	color: #000000;
+	text-decoration: none;
 }
 
 .pagination {
@@ -404,22 +434,15 @@ background-color: #000000;
 	font-size: 16px;
 	line-height: 20px;
 	color: #444444;
+	text-decoration: none;
 }
 
-.pagination-item-link-back {
+.pagination-item-link-back, .pagination-item-link-forward {
 	font-family: 'Raleway';
 	font-style: normal;
 	font-weight: 800;
 	font-size: 18px;
 	line-height: 21px;
-	color: #000000;
-}
-
-.pagination-item-link-forward {
-	font-family: 'Raleway';
-	font-style: normal;
-	font-weight: 800;
-	font-size: 18px;
-	line-height: 21px;
-	color: #000000;
+	color: #444444;
+	text-decoration: none;
 }
