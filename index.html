@@ -3,6 +3,7 @@
    <head>
       <meta charset="utf-8">
       <title>HTML Academy: Девайс</title>
+      <link rel="stylesheet" href="styles/styles.css">
    </head>
    <body>
       <header class="page-header">
@@ -15,16 +16,16 @@
                <button class="user-panel-search" type="submit">Найти</button>
             </form>
          </div>
-         <div class="user-panel-inter">
+         <div class="user-panel-enter">
             <img class="user-panel-image" src="images/icon-user.svg" width="15" height="12" alt="пользователь"> 
             <a class="user-panel-link" href="#">Войти</a>
          </div>
          <ul class="user-panel-basket">
             <li class="user-panel-item">
                <img class="user-panel-image" src="images/icon-scale.svg" width="10" height="12" alt="шкала сравнения">
-               <a class="navigation-compare-link" href="compare.html">Сравнить</a>
+               <a class="user-panel-link" href="compare.html">Сравнить</a>
             </li>
-            <li class="navigation-basket">
+            <li class="user-panel-item">
                <img class="user-panel-image" src="images/icon-group-cart.svg" width="31" height="21" alt="корзина">
                <a class="user-panel-link" href="basket.html">Корзина</a>
             </li>
@@ -54,12 +55,12 @@
             <ul class="promo-slider-list">
                <li class="promo-slider-item">
                   <div class="promo-slider">
-                     <img class="promo-slider-image slider-image" src="images/sliders/slider-1.png" width="560" height="560" alt="Квадрокоптер">   
+                     <img class="promo-slider-image" src="images/sliders/slider-1.png" width="560" height="560" alt="Квадрокоптер">   
                      <p class="promo-slider-title">Порхает как бабочка,<br> жалит как пчела!</p>
                      <p class="promo-slider-text">Этот обычный, на первый взгляд, квадрокоптер оснащен<br> мощным лазером, замаскированным под
                         стандартную камеру.
                      </p>
-                     <a class="promo-slider-link button" href="#">Подробнее</a>
+                     <a class="promo-slider-link-button" href="#">Подробнее</a>
                      <dl>
                         <dt class="description-name">Дальность полёта</dt>
                         <dd class="description-value">800 м</dd>
@@ -73,7 +74,7 @@
                      <img class="promo-slider-image" src="images/sliders/slider-2.png" width="560" height="560"  alt="Фитнес браслет">  
                      <p class="promo-slider-title">Худеем правильно!</p>
                      <p class="promo-slider-text">Мотивирующие фитнес-браслеты помогут найти в себе силы<br>не пропускать занятия и соблюдать диету.</p>
-                     <a class="promo-slider-link button" href="#">Подробнее</a>
+                     <a class="promo-slider-link-button" href="#">Подробнее</a>
                      <dl>
                         <dt class="description-name">Без подзарядки</dt>
                         <dd class="description-value">48 часов</dd>
@@ -86,7 +87,7 @@
                      <p class="promo-slider-title">Делай селфи, как Бен Стиллер!</p>
                      <p class="promo-slider-text">Самая длинная палка для селфи доступна в нашем магазине.<br>Восемь (Восемь, Карл!) метров длиной и весом всего 5 кг.
                      </p>
-                     <a class="promo-slider-link button" href="#">Подробнее</a>
+                     <a class="promo-slider-link-button" href="#">Подробнее</a>
                      <dl>
                         <dt class="description-name">Длина палки</dt>
                         <dd class="description-value">8,5 м</dd>
@@ -156,7 +157,7 @@
             <h2 class="visually-hidden">Преимущества покупки</h2>
             <div class="benefits-buttons">
                <ul class="benefits-buttons-list">
-                  <li><button class="benefits-buttons-item" type="button">Доставка</button>
+                  <li><button class="benefits-buttons-item-choice" type="button">Доставка</button>
                   </li>
                   <li><button class="benefits-buttons-item" type="button">Гарантия</button>
                   </li>
@@ -167,13 +168,13 @@
             <div class="benefits-description">
                <ul class="benefits-description-list">
                   <li class="benefits-description-item">
-                     <h3>Доставка</h3>
+                     <h3 class="benefits-title">Доставка</h3>
                      <img class="benefits-slider" src="images/logo-delivery.svg" width="136" height="164" alt="курьер">
                      <p class="benefits-description-text">Мы с удовольствием доставим ваш товар прямо к вашему <br> подъезду совершенно
                         бесплатно! Ведь мы неплохо <br> заработаем, поднимая его на ваш этаж.</p>
                   </li>
                   <li class="benefits-description-item">
-                     <h3>Гарантия</h3>
+                     <h3 class="benefits-title">Гарантия</h3>
                      <img class="benefits-slider" src="images/logo-guaranty.svg" width="171" height="195" alt="инструменты для ремонта">
                      <p class="benefits-description-text">Если из-за возгорания купленного у нас товара у вас<br>
                         сгорит дом — не переживайте, мы выдадим вам новый.<br>
@@ -181,7 +182,7 @@
                      </p>
                   </li>
                   <li class="benefits-description-item">
-                     <h3>Кредит</h3>
+                     <h3 class="benefits-title">Кредит</h3>
                      <img class="benefits-slider" src="images/logo-credit.svg" width="156" height="188" alt="кредитная карта">
                      <p class="benefits-description-text">Залезть в долговую яму стало проще! Кредитные<br>консультанты подберут для вас наиболее выгодные<br>условия кредита. Выгодные для банка, разумеется.</p>
                   </li>
@@ -194,30 +195,30 @@
                <img class="delivery-card" src="images/icon-delivery-car.svg" width="47" height="31" alt="Автомобиль доставки">
                <p class="benefits-item-description">Доставим редкий товар под заказ</p>
                <div class="benefits-item-info">
-                  <a class="benefits-item-info-link" href="#">i</a> <!--разметила ссылкой-->
+                  <a class="benefits-item-info-link" href="#">i</a> 
                </div>
             </div>
          </section>
          <div class="info-container">
             <h2 class="info-container-title">О нас</h2>
-            <p>Огромный выбор гаджетов не оставит равнодушным<br>гика, который есть в каждом из нас.</p>
-            <p>Мы можем доставить ваш товар в самые отдалённые<br>уголки России транспортными компаниями:</p>
+            <p class="contacts-info">Огромный выбор гаджетов не оставит равнодушным<br>гика, который есть в каждом из нас.</p>
+            <p class="contacts-info">Мы можем доставить ваш товар в самые отдалённые<br>уголки России транспортными компаниями:</p>
             <ul class="info-brands-list">
-               <li class="info-brands">Меловые линии</li>
-               <li class="info-brands">СДИК</li>
-               <li class="info-brands">ТоксБерри</li>
+               <li class="info-brands"><span class="red-dot">Меловые линии</span></li>
+               <li class="info-brands"><span class="red-dot">СДИК</span></li>
+               <li class="info-brands"><span class="red-dot">ТоксБерри</span></li>
             </ul>
             <a class="contacts-info-link" href="*">Подробнее о нас</a> <!--Поменяла класс на такой же, как в элементе на 158 строке("напишите нам")-->
          </div>
          <section class="contacts-container">
-            <h2 class="contacts-title">Контакты</h2>
+            <h2 class="info-container-title">Контакты</h2>
             <p class="contacts-info">Вы можете забрать товар сами, заехав в наш офис.
                Заодно сможете проверить работоспособность покупки. 
             </p>
-            <h3>Интернет-магазин «Девайс»</h3>
-            <p class="footer-contacts-text" >Санкт-Петербург, набережная<br>реки Карповки, 5, литера П.</p>
+            <h3 class="footer-device-title">Интернет-магазин «Девайс»</h3>
+            <p class="footer-adress-text">Санкт-Петербург, набережная<br>реки Карповки, 5, литера П.</p>
             <a class="contacts-info" href="tel:78128121212">+7 (812) 812-12-12</a>
-            <h3>Время работы</h3>
+            <h3 class="footer-working-hours">Время работы</h3>
             <ul class="contacts-info">
                <!--Вместо <br> разметила списком. Также весь блок оформила в section вмeсто div(т.к. есть заголовок. И ещё классы немного поменяла)-->
                <li class="contacts-info">пн—пт: с 10:00 до 22:00</li>
@@ -226,16 +227,15 @@
             <a class="contacts-info-link" href="#">Напишите нам</a>
          </section>
          <section class="mailing-list">
-            <h2>Подпишитесь на рассылку</h2>
+            <h2 class="footer-mailing">Подпишитесь на рассылку</h2>
             <form action="#" class="mailing-form">
                <label class="mailing-email-field" for="mailing-email" >
-                  <!--увидела ошибку и сделал id\for одинаковыми-->
                   <input class="mailing-input" id="mailing-email" name="e-mail" type="email" placeholder="Ваш e-mail">
                </label>
                <button class="button button-submit" type="submit">Подписаться</button>
             </form>
-            <p>Еженедельный дайджест с обзорами новинок,<br>длительными тест-драйвами, распаковками, а также акции,<br> спецпредложения и вот это вот всё.</p>
-            <p>Это бесплатно</p>
+            <p class="mailing-description">Еженедельный дайджест с обзорами новинок,<br>длительными тест-драйвами, распаковками, а также акции,<br> спецпредложения и вот это вот всё.</p>
+            <p mailing-description >Это бесплатно</p>
          </section>
       </main>
       <footer class="page-footer">

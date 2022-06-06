@@ -3,6 +3,7 @@
    <head>
       <meta charset="utf-8">
       <title>HTML Academy: Девайс</title>
+      <link rel="stylesheet" href="styles/styles.css">
    </head>
    <body>
       <header class="page-header">
@@ -22,7 +23,7 @@
          <ul class="user-panel-basket">
             <li class="user-panel-item">
                <img class="user-panel-image" src="images/icon-scale.svg" width="10" height="12" alt="шкала сравнения">
-               <a class="navigation-compare-link" href="compare.html">Сравнить</a>
+               <a class="user-panel-link" href="compare.html">Сравнить</a>
             </li>
             <li class="navigation-basket">
                <img class="user-panel-image" src="images/icon-group-cart.svg" width="31" height="21" alt="корзина">
@@ -71,8 +72,8 @@
             </section>
          </header>
          <section class="catalog-products">
-            <h2 class="visually-hidden">Фильтр:</h2>
-            <form class="catalog-filter" action="#">
+            <h2 class="catalog-filter">Фильтр:</h2>
+            <form class="catalog-filter-form" action="#" method="get">
                <fieldset class="catalog-filter-group">
                   <legend class="catalog-filter-title">Стоимость</legend>
                   <div class="range-scale">
@@ -106,11 +107,11 @@
                   <label class="control">
                   <input class="control-input" type="radio" name="no"><span>Нет</span></label>
                </fieldset>
-               <button class="button" type="submit">Показать</button>
+               <button class="button-view" type="submit">Показать</button>
             </form>
          </section>
          <div class="sorting">
-            <h3>Сортировка:</h3>
+            <h3 class="sorting-title">Сортировка:</h3>
             <select class="select-control" aria-label="Сортировка">
                <option value="popular">Популярные</option>
                <option value="cheap">По уменьшению цены</option>
@@ -159,7 +160,7 @@
             <h3 class="visually-hidden">Выбор страницы каталога</h3>
             <ul class="pagination-list">
                <li class="pagination-item">
-                  <a class="pagination-item-link" href="#">Назад</a>
+                  <a class="pagination-item-link-back" href="#">Назад</a>
                </li>
                <li class="pagination-item">
                   <a class="pagination-item-link">1</a> <!--убрала хреф со страницы, на которой находимся-->
@@ -171,15 +172,15 @@
                   <a class="pagination-item-link" href="#">3</a>
                </li>
                <li class="pagination-item">
-                  <a class="pagination-link" href="#" aria-label="Другие страницы">
+                  <a class="pagination-item-link" href="#" aria-label="Другие страницы">
                   <span aria-hidden="true">...</span>
                   </a>
                </li>
-               <li class="pagination-item">
+               <li class="pagination-item-link">
                   <a class="pagination-item-link" href="#">15</a>
                </li>
                <li class="pagination-item">
-                  <a class="pagination-item-link" href="#">Вперёд</a>
+                  <a class="pagination-item-link-forward" href="#">Вперёд</a>
                </li>
             </ul>
          </div>
@@ -188,8 +189,7 @@
          <div class="footer-logo-adress">
             <img class="footer-logo" src="images/logo-footer.svg"  alt="Логотип сайта Девайс">
             <p class="footer-contacts-text" >Санкт-Петербург, набережная<br>реки Карповки, 5, литера П.</p>
-            <!--Добавила такой же калсс как у телефона в футере-->
-         </div>
+        </div>
          <div class="footer-menu">
             <ul class="footer-menu-list">
                <li class="footer-menu-item">
