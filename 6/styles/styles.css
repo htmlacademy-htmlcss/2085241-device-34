@@ -125,9 +125,22 @@ body {
 
 
 .navigation-catalog {
+	display: flex;
 	width: 293px;
 	margin-right: 60px;
 
+}
+
+.navigation-catalog-link-list {
+display: flex;
+font-family: 'Raleway';
+font-style: normal;
+font-weight: 800;
+font-size: 18px;
+line-height: 21px;
+list-style: none;
+padding: 0;
+margin: 0;
 }
 
 .navigation-catalog-button {
@@ -137,18 +150,20 @@ body {
 	font-size: 18px;
 	line-height: 21px;
 	background-color: #FFE17F;
-	;
 	margin: 0;
 	padding: 0;
-
 	border: none;
+	width: 50px;
 }
 
 .navigation-container {
 	display: flex;
 	width: 471px;
 
-
+}
+.link-catalog-main {
+	color: #000000;
+	text-decoration: none;
 }
 
 .navigation-link {
@@ -181,7 +196,6 @@ body {
 	padding: 0;
 
 }
-
 
 .main-container {
 	flex-grow: 1;
